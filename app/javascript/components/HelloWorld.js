@@ -13,7 +13,7 @@ function getThings() {
     return fetch(`v1/greetings.json`)
       .then((response) => response.json())
       .then((json) => dispatch(getThingsSuccess(json)))
-      .catch((error) => console.log(`Fetching Error${error}`));
+      .catch((error) => console.log(`Fetching Error ${error}`));
   };
 }
 
